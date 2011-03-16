@@ -34,6 +34,11 @@
 			<artifactId>jmock-junit4</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.badlogic.libgdx</groupId>
+			<artifactId>libgdx</artifactId>
+			<version>0.9.0</version>
+		</dependency>
 	</dependencies>
 
 </project>

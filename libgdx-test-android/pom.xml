@@ -12,6 +12,28 @@
 	<name>Test</name>
 	<description>Test</description>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.googlecode.mavennatives</groupId>
+				<artifactId>maven-nativedependencies-plugin</artifactId>
+				<version>0.0.5</version>
+				<configuration>
+					<nativesTargetDir>libs</nativesTargetDir>
+					<separateDirs>true</separateDirs>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -33,6 +55,22 @@
 			<artifactId>jmock-junit4</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>libgdx-test-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+				<dependency>
+			<groupId>com.badlogic.libgdx</groupId>
+			<artifactId>libgdx</artifactId>
+			<version>0.9.0</version>
+			<classifier>natives-armeabi</classifier>
+		</dependency>
+		<dependency>
+			<groupId>com.badlogic.libgdx</groupId>
+			<artifactId>libgdx</artifactId>
+			<version>0.9.0</version>
+			<classifier>natives-armeabi-v7a</classifier>
+		</dependency>
 	</dependencies>
-
 </project>
