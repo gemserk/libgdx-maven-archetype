@@ -3,3 +3,6 @@ target
 .project
 .settings
 libgdx-test-android/libs/
+libgdx-test-android/.externalToolBuilders/
+libgdx-test-android/gen/
+libgdx-test-android/res/
