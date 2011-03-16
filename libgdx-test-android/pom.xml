@@ -14,7 +14,18 @@
 	<description>Test</description>
 
 	<build>
+		<sourceDirectory>src</sourceDirectory>
+
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>com.googlecode.mavennatives</groupId>
 				<artifactId>maven-nativedependencies-plugin</artifactId>
@@ -39,7 +50,7 @@
 				<configuration>
 					<sdk>
 						<path>${env.ANDROID_HOME}</path>
-						<platform>2.2</platform>
+						<platform>9</platform>
 					</sdk>
 					<deleteConflictingFiles>true</deleteConflictingFiles>
 				</configuration>
@@ -69,12 +80,14 @@
 			<artifactId>jmock-junit4</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>com.google.android</groupId>
 			<artifactId>android</artifactId>
 			<version>2.2.1</version>
 			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>libgdx-test-core</artifactId>
