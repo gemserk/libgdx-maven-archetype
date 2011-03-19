@@ -96,23 +96,32 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx-android</artifactId>
-			<version>0.9.0</version>
+			<groupId>com.badlogic.gdx</groupId>
+			<artifactId>gdx-backend-android</artifactId>
+			<version>0.91-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>gdx-platform</artifactId>
+					<groupId>com.badlogic.gdx</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
+
 		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx</artifactId>
-			<version>0.9.0</version>
+			<artifactId>gdx-platform</artifactId>
+			<groupId>com.badlogic.gdx</groupId>
+			<version>0.91-SNAPSHOT</version>
+			<scope>provided</scope>
 			<classifier>natives-armeabi</classifier>
-			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx</artifactId>
-			<version>0.9.0</version>
-			<classifier>natives-armeabi-v7a</classifier>
+			<artifactId>gdx-platform</artifactId>
+			<groupId>com.badlogic.gdx</groupId>
+			<version>0.91-SNAPSHOT</version>
 			<scope>provided</scope>
+			<classifier>natives-armeabi-v7a</classifier>
 		</dependency>
+		
 	</dependencies>
 </project>

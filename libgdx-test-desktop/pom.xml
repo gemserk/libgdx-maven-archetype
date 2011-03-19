@@ -59,38 +59,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx-lwjgl</artifactId>
-			<version>0.9.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx</artifactId>
-			<version>0.9.0</version>
-			<classifier>natives-linux</classifier>
-		</dependency>
-		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx</artifactId>
-			<version>0.9.0</version>
-			<classifier>natives-win</classifier>
-		</dependency>
-		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx</artifactId>
-			<version>0.9.0</version>
-			<classifier>natives-mac</classifier>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.lwjgl</groupId>
-			<artifactId>lwjgl</artifactId>
-			<version>2.6.0-GEMSERK</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lwjgl</groupId>
-			<artifactId>jinput</artifactId>
-			<version>2.6.0-GEMSERK</version>
+			<groupId>com.badlogic.gdx</groupId>
+			<artifactId>gdx-backend-lwjgl</artifactId>
 		</dependency>
 		
 	</dependencies>
