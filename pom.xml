@@ -5,8 +5,8 @@
 	<artifactId>libgdxtest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Test Desktop</name>
-	<description>Test Desktop</description>
+	<name>Test Parent</name>
+	<description>Test Parent</description>
 
 	<organization>
 		<name>Gemserk</name>
@@ -57,6 +57,7 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
@@ -67,6 +68,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
 				</configuration>
@@ -110,6 +112,14 @@
 			</plugin>
 
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.8</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 
 	<dependencyManagement>
@@ -117,7 +127,7 @@
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.7</version>
+				<version>4.8.2</version>
 				<scope>test</scope>
 			</dependency>
 			<dependency>

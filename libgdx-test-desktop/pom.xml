@@ -10,8 +10,8 @@
 	<artifactId>libgdx-test-desktop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>Test</name>
-	<description>Test</description>
+	<name>Test Desktop</name>
+	<description>Test Desktop</description>
 
 	<build>
 		<plugins>
