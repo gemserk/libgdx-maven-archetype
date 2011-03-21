@@ -5,8 +5,8 @@
 	<artifactId>libgdxtest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Test</name>
-	<description>Test</description>
+	<name>Test Parent</name>
+	<description>Test Parent</description>
 
 	<organization>
 		<name>Gemserk</name>
@@ -50,6 +50,7 @@
 
 	<properties>
 		<compiler.version>1.6</compiler.version>
+		<libgdxversion>0.91-SNAPSHOT</libgdxversion>
 	</properties>
 
 	<build>
@@ -112,6 +113,14 @@
 			</plugin>
 
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.8</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 
 	<dependencyManagement>
@@ -119,7 +128,7 @@
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.7</version>
+				<version>4.8.2</version>
 				<scope>test</scope>
 			</dependency>
 			<dependency>
@@ -140,18 +149,6 @@
 				<version>2.5.1</version>
 				<scope>test</scope>
 			</dependency>
-
-			<dependency>
-				<groupId>com.badlogic.gdx</groupId>
-				<artifactId>gdx</artifactId>
-				<version>0.91-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>com.badlogic.gdx</groupId>
-				<artifactId>gdx-backend-lwjgl</artifactId>
-				<version>0.91-SNAPSHOT</version>
-			</dependency>
-
 		</dependencies>
 	</dependencyManagement>
 

@@ -10,8 +10,8 @@
 	<artifactId>libgdx-test-android</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>apk</packaging>
-	<name>Test</name>
-	<description>Test</description>
+	<name>Test Android</name>
+	<description>Test Android</description>
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -98,29 +98,7 @@
 		<dependency>
 			<groupId>com.badlogic.gdx</groupId>
 			<artifactId>gdx-backend-android</artifactId>
-			<version>0.91-SNAPSHOT</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>gdx-platform</artifactId>
-					<groupId>com.badlogic.gdx</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
-		<dependency>
-			<artifactId>gdx-platform</artifactId>
-			<groupId>com.badlogic.gdx</groupId>
-			<version>0.91-SNAPSHOT</version>
-			<scope>provided</scope>
-			<classifier>natives-armeabi</classifier>
-		</dependency>
-
-		<dependency>
-			<artifactId>gdx-platform</artifactId>
-			<groupId>com.badlogic.gdx</groupId>
-			<version>0.91-SNAPSHOT</version>
-			<scope>provided</scope>
-			<classifier>natives-armeabi-v7a</classifier>
+			<version>${libgdxversion}</version>
 		</dependency>
 		
 	</dependencies>
