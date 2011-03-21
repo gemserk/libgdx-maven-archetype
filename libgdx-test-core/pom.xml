@@ -10,8 +10,8 @@
 	<artifactId>libgdx-test-core</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>Test</name>
-	<description>Test</description>
+	<name>Test Core</name>
+	<description>Test Core</description>
 
 	<dependencies>
 		<dependency>
@@ -35,9 +35,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx</artifactId>
-			<version>0.9.0</version>
+			<groupId>com.badlogic.gdx</groupId>
+			<artifactId>gdx</artifactId>
+			<version>${libgdxversion}</version>
 		</dependency>
 	</dependencies>
 

@@ -9,9 +9,9 @@
 	<groupId>com.gemserk.libgdxtest</groupId>
 	<artifactId>libgdx-test-android</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-	<name>Test</name>
-	<description>Test</description>
+	<packaging>apk</packaging>
+	<name>Test Android</name>
+	<description>Test Android</description>
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -95,21 +95,24 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx-android</artifactId>
-			<version>0.9.0</version>
+			<groupId>com.badlogic.gdx</groupId>
+			<artifactId>gdx-backend-android</artifactId>
+			<version>${libgdxversion}</version>
 		</dependency>
+		
 		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx</artifactId>
-			<version>0.9.0</version>
+			<groupId>com.badlogic.gdx</groupId>
+			<artifactId>gdx-platform</artifactId>
+			<version>${libgdxversion}</version>
 			<classifier>natives-armeabi</classifier>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.badlogic.libgdx</groupId>
-			<artifactId>libgdx</artifactId>
-			<version>0.9.0</version>
+			<groupId>com.badlogic.gdx</groupId>
+			<artifactId>gdx-platform</artifactId>
+			<version>${libgdxversion}</version>
 			<classifier>natives-armeabi-v7a</classifier>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 </project>

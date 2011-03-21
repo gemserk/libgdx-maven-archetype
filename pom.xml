@@ -5,8 +5,8 @@
 	<artifactId>libgdxtest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Test</name>
-	<description>Test</description>
+	<name>Test Desktop</name>
+	<description>Test Desktop</description>
 
 	<organization>
 		<name>Gemserk</name>
@@ -50,6 +50,7 @@
 
 	<properties>
 		<compiler.version>1.6</compiler.version>
+		<libgdxversion>0.91-SNAPSHOT</libgdxversion>
 	</properties>
 
 	<build>
