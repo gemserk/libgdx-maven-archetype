@@ -16,7 +16,18 @@ package com.gemserk.libgdx.test;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 
 public class HelloWorldDesktop {
-	public static void main (String[] argv) {
-		new LwjglApplication(new HelloWorld(), "Hello World", 480, 320, false);
+	public static void main(String[] argv) {
+		new LwjglApplication(new HelloWorld(new AdWhirlViewHandler() {
+
+			@Override
+			public void show() {
+
+			}
+
+			@Override
+			public void hide() {
+
+			}
+		}), "Hello World", 480, 320, false);
 	}
 }

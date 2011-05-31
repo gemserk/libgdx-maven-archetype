@@ -59,7 +59,7 @@
 			<version>2.2.1</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>libgdx-test-core</artifactId>
@@ -71,6 +71,12 @@
 			<artifactId>gdx-backend-android</artifactId>
 			<version>${libgdxversion}</version>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>com.adwhirl.adwhirl</groupId>
+			<artifactId>adwhirl</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
 	</dependencies>
 </project>
